@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Hi, I’m Mahesh. I build web apps and care about how they feel. Meet me, explore my work, and say hello in six animated scenes."
+    />
+    <title>Mahesh — A little about me</title>
+    <link rel="icon" href="./favicon.svg" />
+    <script>
+      try {
+        const t = localStorage.getItem("mahesh-scenes-theme");
+        document.documentElement.dataset.theme =
+          t === "light" ? "light" : "dark";
+      } catch {}
+    </script>
+    <link rel="stylesheet" href="./src/scenes/scenes.css" />
+    <script type="module" src="./src/scenes/main.ts"></script>
+  </head>
+  <body>
+    <a class="skip" href="#chat">Skip to my projects</a>
+    <header class="scene-header">
+      <a class="scene-brand" href="#hello" aria-label="Mahesh, back to hello"
+        >m<span>✳</span><small>MAHESH<br />A LITTLE ABOUT ME</small></a
+      >
+      <div class="header-right">
+        <a href="./portfolio.html">Classic ↗</a
+        ><a href="./motion.html">In Motion ↗</a
+        ><button id="scene-motion" hidden aria-pressed="false">
+          Pause motion</button
+        ><button id="scene-theme" hidden aria-label="Switch to light theme">
+          ☀
+        </button>
+      </div>
+    </header>
+    <main id="scene-track">
+      <div id="scene-stage">
+        <section
+          class="scene hello-scene"
+          id="hello"
+          aria-labelledby="hello-title"
+          data-label="Hello"
+        >
+          <div class="scene-copy">
+            <p class="eyebrow copy-bit">01 / NICE TO MEET YOU</p>
+            <h1 id="hello-title" class="copy-bit">
+              Hi, I’m<br /><em>Mahesh.</em><span class="hello-dot">✳</span>
+            </h1>
+            <p class="scene-intro copy-bit">
+              I build web apps.<br />And I care about how they feel.
+            </p>
+            <p class="scene-small copy-bit">
+              A full-stack developer in Hyderabad.<br />A curious builder, with
+              a soft spot for good design.
+            </p>
+            <div class="scene-actions copy-bit">
+              <a class="primary" href="#journey"
+                >Come, have a look <span>↘</span></a
+              ><a href="./assets/Mahesh-Resume.pdf" download>My résumé ↗</a>
+            </div>
+          </div>
+          <div
+            class="scene-art portrait-art"
+            aria-label="An original illustrated portrait of a developer"
+          >
+            <div class="portrait-orbit piece" aria-hidden="true"></div>
+            <div class="portrait-card piece">
+              <span class="card-topline">A FACE BEHIND THE CODE</span
+              ><svg viewBox="0 0 400 410" fill="none" aria-hidden="true">
+                <path
+                  d="M30 410c5-98 52-124 170-124s165 26 170 124"
+                  fill="var(--accent)"
+                />
+                <path d="M150 275v50q50 45 100 0v-50" fill="#bd845c" />
+                <ellipse cx="200" cy="177" rx="87" ry="115" fill="#d9a379" />
+                <ellipse cx="112" cy="192" rx="14" ry="24" fill="#d9a379" />
+                <ellipse cx="288" cy="192" rx="14" ry="24" fill="#d9a379" />
+                <path
+                  d="M112 161c-21-88 18-137 93-134 79-7 108 51 82 131l-21-51c-48 17-70-10-105 0-21 4-27 28-49 54"
+                  fill="#292332"
+                />
+                <path
+                  d="M119 167c25-11 53-9 67 1m30 0c22-9 45-10 66 0"
+                  stroke="#292332"
+                  stroke-width="7"
+                  stroke-linecap="round"
+                />
+                <rect
+                  x="122"
+                  y="161"
+                  width="64"
+                  height="44"
+                  rx="14"
+                  stroke="#292332"
+                  stroke-width="5"
+                />
+                <rect
+                  x="214"
+                  y="161"
+                  width="64"
+                  height="44"
+                  rx="14"
+                  stroke="#292332"
+                  stroke-width="5"
+                />
+                <path d="M186 176h28" stroke="#292332" stroke-width="5" />
+                <circle cx="157" cy="180" r="5" fill="#292332" />
+                <circle cx="242" cy="180" r="5" fill="#292332" />
+                <path
+                  d="m200 185-9 32h15m-30 24q26 20 50-2"
+                  stroke="#8f523b"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="m135 310 65 63 65-63M200 373v37"
+                  stroke="var(--deep)"
+                  stroke-opacity=".25"
+                  stroke-width="2"
+                /></svg
+              ><span class="portrait-name">Mahesh Pachapalam <b>↗</b></span>
+            </div>
+            <div class="sticker experience-sticker piece">
+              <strong>6+</strong><span>years of<br />building things</span>
+            </div>
+            <div class="sticker design-sticker piece">
+              Code is my work.<br /><em>Design is my happy place.</em>
+            </div>
+            <span class="art-footnote"
+              >ORIGINAL ILLUSTRATION / NOT A PHOTOGRAPH</span
+            >
+          </div>
+        </section>
+        <section
+          class="scene journey-scene"
+          id="journey"
+          aria-labelledby="journey-title"
+          data-label="My journey"
+        >
+          <div class="scene-copy">
+            <p class="eyebrow copy-bit">02 / A LITTLE ABOUT MY WORK</p>
+            <h2 id="journey-title" class="copy-bit">
+              Learning.<br />Building.<br /><em>Getting better.</em>
+            </h2>
+            <p class="scene-intro copy-bit">
+              I’ve worked on everyday apps<br />and the systems behind financial
+              services.
+            </p>
+            <p class="scene-small copy-bit">
+              From my first role at Akrivia to fintech work at 911 Fintech, I’ve
+              kept learning by doing.
+            </p>
+            <button class="text-button copy-bit" data-detail="journey" hidden>
+              The longer story <span>↗</span>
+            </button>
+          </div>
+          <div class="scene-art journey-art">
+            <article class="career-tile piece tile-first">
+              <span class="tile-number">01</span>
+              <div>
+                <p>THE FOUNDATION</p>
+                <h3>IIIT, RK Valley</h3>
+                <span>B.Tech · Computer Science · 2014–2018</span>
+              </div>
+              <b>↗</b>
+            </article>
+            <article class="career-tile piece tile-second">
+              <span class="tile-number">02</span>
+              <div>
+                <p>MY FIRST CHAPTER</p>
+                <h3>Akrivia Automation</h3>
+                <span>MEAN Stack Developer · 2019–2022</span>
+              </div>
+              <b>↗</b>
+            </article>
+            <article class="career-tile piece tile-third">
+              <span class="tile-number">03</span>
+              <div>
+                <p>BUILDING FOR FINTECH</p>
+                <h3>911 Fintech Solutions</h3>
+                <span>Senior Full Stack Developer · 2022–2026</span>
+              </div>
+              <b>↗</b>
+            </article>
+            <span class="journey-thread" aria-hidden="true"></span
+            ><span class="hand-note piece"
+              >A few years.<br /><em>A lot of learning.</em></span
+            >
+          </div>
+        </section>
+        <section
+          class="scene tools-scene"
+          id="tools"
+          aria-labelledby="tools-title"
+          data-label="My tools"
+        >
+          <div class="scene-copy">
+            <p class="eyebrow copy-bit">03 / WHAT’S IN MY TOOLBOX</p>
+            <h2 id="tools-title" class="copy-bit">
+              The right tools.<br /><em>A bit of care.</em>
+            </h2>
+            <p class="scene-intro copy-bit">
+              I work on what you see,<br />and what happens behind it.
+            </p>
+            <p class="scene-small copy-bit">
+              Angular for the screen. Node.js for the work behind it. Databases
+              and cloud tools to keep things connected.
+            </p>
+            <div class="creative-label copy-bit">
+              <span>✳</span> Vibe Coder &amp;<br />Stylish UI/UX Designer
+            </div>
+            <button class="text-button copy-bit" data-detail="tools" hidden>
+              A little more about my skills ↗
+            </button>
+          </div>
+          <div class="scene-art tools-art">
+            <div class="tool-card piece tool-0">
+              <span>A</span>
+              <h3>Angular</h3>
+              <p>Screens that feel right</p>
+            </div>
+            <div class="tool-card piece tool-1">
+              <span>TS</span>
+              <h3>TypeScript</h3>
+              <p>A little more clarity</p>
+            </div>
+            <div class="tool-card piece tool-2">
+              <span>n</span>
+              <h3>Node.js</h3>
+              <p>Behind the scenes</p>
+            </div>
+            <div class="tool-card piece tool-3">
+              <span>{ }</span>
+              <h3>Express</h3>
+              <p>Connecting the pieces</p>
+            </div>
+            <div class="tool-card piece tool-4">
+              <span>▤</span>
+              <h3>Databases</h3>
+              <p>Remembering the details</p>
+            </div>
+            <div class="tool-card piece tool-5">
+              <span>↥</span>
+              <h3>Cloud & CI/CD</h3>
+              <p>Getting it out there</p>
+            </div>
+            <div class="tool-center piece" aria-hidden="true">
+              make<br /><em>it work.</em>
+            </div>
+            <button class="tool-play" id="tool-play" hidden>
+              Shuffle my toolbox <span>↻</span>
+            </button>
+          </div>
+        </section>
+        <section
+          class="scene chat-scene"
+          id="chat"
+          aria-labelledby="chat-title"
+          data-label="Chat System"
+        >
+          <div class="scene-copy">
+            <p class="eyebrow copy-bit">04 / A PROJECT I BUILT</p>
+            <h2 id="chat-title" class="copy-bit">
+              A simple hello.<br /><em>A real connection.</em>
+            </h2>
+            <p class="project-name copy-bit">CHAT SYSTEM</p>
+            <p class="scene-intro copy-bit">
+              Private chats, group conversations,<br />and knowing who’s around.
+            </p>
+            <p class="scene-small copy-bit">
+              I built both sides: the Angular app and the Node.js services that
+              keep the conversation going.
+            </p>
+            <div class="scene-actions copy-bit">
+              <a
+                class="primary"
+                href="https://maheshpcse.github.io/chat-app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Try Chat System ↗</a
+              ><button class="text-button" data-detail="chat" hidden>
+                Inside the project ↗
+              </button>
+            </div>
+            <div class="repo-links copy-bit">
+              <a
+                href="https://github.com/maheshpcse/chat-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Frontend code ↗</a
+              ><a
+                href="https://github.com/maheshpcse/chat-system"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Backend code ↗</a
+              >
+            </div>
+          </div>
+          <div class="scene-art chat-art">
+            <svg
+              class="chat-cables"
+              viewBox="0 0 600 600"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                class="draw-line"
+                d="M35 90h110q40 0 40 40v45q0 35 35 35h175q30 0 30 30v170q0 40 40 40h100"
+              />
+              <path
+                class="draw-line"
+                d="M20 430h90q40 0 40-40V235q0-35 35-35h60q30 0 30-30V80"
+              />
+            </svg>
+            <div class="chat-phone piece">
+              <div class="phone-top">
+                <b>c✳</b
+                ><span
+                  >GOOD CONVERSATIONS<small
+                    >A SMALL INTERFACE STUDY</small
+                  ></span
+                ><i></i>
+              </div>
+              <div class="chat-note">A place to say hello.</div>
+              <div class="speech speech-one piece">Hey, got a minute? 👋</div>
+              <div class="speech speech-two piece">
+                Always. What are we building?
+              </div>
+              <div
+                class="speech speech-three piece"
+                id="hello-message"
+                aria-live="polite"
+              >
+                Something worth sharing.
+              </div>
+              <button id="send-hello" hidden>
+                Send a hello <span>↑</span>
+              </button>
+            </div>
+            <span class="chat-star piece" aria-hidden="true">✳</span>
+            <div class="chat-stamp piece">
+              YOU + ME<br /><em>connected.</em>
+            </div>
+          </div>
+        </section>
+        <section
+          class="scene bank-scene"
+          id="bank"
+          aria-labelledby="bank-title"
+          data-label="Banking System"
+        >
+          <div class="scene-copy">
+            <p class="eyebrow copy-bit">05 / ANOTHER PROJECT I BUILT</p>
+            <h2 id="bank-title" class="copy-bit">
+              Money moves.<br /><em>Keep it simple.</em>
+            </h2>
+            <p class="project-name copy-bit">BANKING SYSTEM</p>
+            <p class="scene-intro copy-bit">
+              Accounts, transfers, and bills.<br />Together in one application.
+            </p>
+            <p class="scene-small copy-bit">
+              I connected an Angular interface to banking services, with account
+              access and transaction history.
+            </p>
+            <div class="scene-actions copy-bit">
+              <a
+                class="primary"
+                href="https://maheshpcse.github.io/banking-system/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Try Banking System ↗</a
+              ><button class="text-button" data-detail="bank" hidden>
+                Inside the project ↗
+              </button>
+            </div>
+            <div class="repo-links copy-bit">
+              <a
+                href="https://github.com/maheshpcse/banking-system"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Frontend code ↗</a
+              ><a
+                href="https://github.com/maheshpcse/banking-system-server"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Backend code ↗</a
+              >
+            </div>
+          </div>
+          <div class="scene-art bank-art">
+            <div class="receipt piece">
+              <span>A LITTLE PEACE OF MIND</span>
+              <h3>All in order.</h3>
+              <div>Account access <b>✓</b></div>
+              <div>Transfers <b>✓</b></div>
+              <div>Bill payments <b>✓</b></div>
+              <p>ONE CONNECTED APP</p>
+              <div class="barcode" aria-hidden="true"></div>
+            </div>
+            <div class="payment-card piece">
+              <span>BANKING SYSTEM <b>✳</b></span
+              ><svg
+                viewBox="0 0 46 34"
+                fill="none"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <rect x="1" y="1" width="44" height="32" rx="6" />
+                <path
+                  d="M15 1v32M30 1v32M1 11h14m15 0h15M1 22h14m15 0h15M15 17h15"
+                /></svg
+              ><strong>•••• &nbsp; •••• &nbsp; •••• &nbsp; 2026</strong
+              ><small>AN ILLUSTRATION, NOT A REAL CARD</small>
+            </div>
+            <div class="transfer-pill piece">
+              <span class="transfer-spark" aria-hidden="true">↗</span
+              ><span
+                >From account to payment.<small>THAT’S THE IDEA.</small></span
+              >
+            </div>
+          </div>
+        </section>
+        <section
+          class="scene contact-scene"
+          id="contact"
+          aria-labelledby="contact-title"
+          data-label="Say hello"
+        >
+          <div class="scene-copy">
+            <p class="eyebrow copy-bit">06 / THAT’S A LITTLE ABOUT ME</p>
+            <h2 id="contact-title" class="copy-bit">
+              Your turn.<br /><em>Say hello.</em>
+            </h2>
+            <p class="scene-intro copy-bit">
+              Have something in mind?<br />I’d love to hear about it.
+            </p>
+            <a
+              class="email-link copy-bit"
+              href="mailto:maheshmahi1599@gmail.com"
+              >maheshmahi1599@gmail.com ↗</a
+            >
+            <div class="repo-links copy-bit">
+              <a
+                href="https://github.com/maheshpcse"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub ↗</a
+              ><a
+                href="https://www.linkedin.com/in/p-mahesh-89266a183"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn ↗</a
+              ><a href="./assets/Mahesh-Resume.pdf" download>Résumé ↓</a>
+            </div>
+            <p class="scene-small copy-bit">
+              Want another look? Scroll back up.<br />The story works both ways.
+            </p>
+          </div>
+          <div class="scene-art contact-art">
+            <div class="envelope piece">
+              <div class="letter piece">
+                <span>TO THE NEXT GOOD THING</span
+                ><strong>Let’s build<br /><em>something.</em></strong
+                ><span class="letter-sign">— Mahesh</span>
+              </div>
+              <div class="envelope-front"></div>
+              <div class="envelope-flap piece"></div>
+            </div>
+            <div class="postmark piece">
+              HYDERABAD<br /><b>✳</b><br />WITH CARE
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <nav class="scene-picker" aria-label="Choose a scene" hidden>
+      <a href="#hello" aria-label="Hello"><span>01</span><b>Hello</b></a
+      ><a href="#journey" aria-label="My journey"
+        ><span>02</span><b>My journey</b></a
+      ><a href="#tools" aria-label="My tools"><span>03</span><b>My tools</b></a
+      ><a href="#chat" aria-label="Chat System"
+        ><span>04</span><b>Chat System</b></a
+      ><a href="#bank" aria-label="Banking System"
+        ><span>05</span><b>Banking System</b></a
+      ><a href="#contact" aria-label="Say hello"
+        ><span>06</span><b>Say hello</b></a
+      >
+    </nav>
+    <footer class="scene-footer" hidden>
+      <span id="scene-count">01 / 06 <b>Hello</b></span>
+      <div class="scene-progress" aria-hidden="true"><i></i></div>
+      <span class="scroll-instruction">SCROLL DOWN OR UP</span>
+      <div class="scene-step">
+        <button id="scene-prev" aria-label="Previous scene">↑</button
+        ><button id="scene-next" aria-label="Next scene">↓</button>
+      </div>
+    </footer>
+    <dialog id="scene-detail" aria-labelledby="detail-title">
+      <div class="detail-frame">
+        <button id="detail-close" aria-label="Close details">Close ×</button>
+        <p class="eyebrow">A LITTLE MORE</p>
+        <h2 id="detail-title"></h2>
+        <div id="detail-content"></div>
+      </div>
+    </dialog>
+  </body>
+</html>

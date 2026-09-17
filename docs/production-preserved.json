@@ -1,0 +1,13 @@
+{
+  "index.html": "807cd4cfecea716540d34343321d20090ae2349294a0458181f4913d0c5fb7e0",
+  "portfolio.html": "6ea91bb46e3952764cc65a2d2a3500a294a40e6f90b9f98e9736e8e7c347d662",
+  "src/main.ts": "af71f5cc97b53017dd19412615b917b1c906f2c08ee96ff631b291246afc07f1",
+  "src/styles.css": "d93bc878cc3e8c99f9c93139f6b6c0c916ad9a985cbfc6dfb050ce1d74d3b284",
+  "motion.html": "5dcc46e29c70963aeefaf334ae1a7d61fc9ba4b6a90c41e4cdc2fa685659dc60",
+  "src/motion/engine.ts": "2bba855de4f43f442b2c0956e9026b562a4a6f77c1b1aa89341e86deeba40f4e",
+  "src/motion/main.ts": "f7fe638d42904a91c6584f5466340bca937d3d0f61e1737d779e4ef18ae3e2ee",
+  "src/motion/motion.css": "de276bef91a226f3e44cd2ad6783b8a2680882d7162aced4292200b17b488823",
+  "scenes.html": "deedde413f77caaa094016d935f09eeb0dbaf7f33272d46609547ab5f2a935c8",
+  "src/scenes/main.ts": "870a5690f4157c924396f78552cbf9449fcedddadeab7fed7422ac3eb817d627",
+  "src/scenes/scenes.css": "3b0be8da485a20b5cf8b16445828f479465b90074e586cde10a5a5938dce6d05"
+}

@@ -1,0 +1,1266 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Mahesh Pachapalam — engineering, design, and a portfolio in motion. Explore full-stack projects and six years of building connected systems."
+    />
+    <meta name="theme-color" content="#14131b" />
+    <title>Mahesh — In Motion</title>
+    <link rel="icon" href="./favicon.svg" />
+    <script>
+      try {
+        const t = localStorage.getItem("mahesh-motion-theme");
+        document.documentElement.dataset.theme =
+          t === "light" || t === "dark"
+            ? t
+            : matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark";
+      } catch {}
+    </script>
+    <link rel="stylesheet" href="./src/motion/motion.css" />
+    <script type="module" src="./src/motion/main.ts"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#work">Skip to selected work</a>
+    <div class="page-progress" aria-hidden="true"></div>
+    <header class="motion-nav">
+      <a class="brand" href="#top" aria-label="Mahesh, back to top"
+        >m<span>✳</span><small>MAHESH<br />IN MOTION</small></a
+      >
+      <nav aria-label="Portfolio navigation">
+        <a href="#work">Work</a><a href="#journey">Journey</a
+        ><a href="#toolkit">Toolkit</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="classic-link" href="./portfolio.html">Classic version ↗</a
+        ><button id="motion-toggle" aria-pressed="false" hidden>
+          Pause motion</button
+        ><button id="motion-theme" aria-label="Switch to light theme" hidden>
+          ◐
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero section" id="top" aria-labelledby="hero-title">
+        <div class="hero-meta">
+          <span><i class="status-dot"></i> HYDERABAD, INDIA</span
+          ><span>ENGINEERING × EXPRESSION</span>
+        </div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow intro-item">HELLO, I’M MAHESH PACHAPALAM</p>
+            <h1 id="hero-title">
+              <span class="title-line">Good code.</span
+              ><span class="title-line">Great <em>feeling.</em></span>
+            </h1>
+            <p class="hero-description intro-item">
+              I build the systems behind the screen.<br />And the moments that
+              make it worth exploring.
+            </p>
+            <div class="hero-actions intro-item">
+              <a class="pill primary magnetic" href="#work"
+                >Explore my work <span>↘</span></a
+              ><a class="text-link" href="./assets/Mahesh-Resume.pdf" download
+                >Download résumé ↗</a
+              >
+            </div>
+          </div>
+          <div class="hero-art">
+            <div class="art-grid" aria-hidden="true"></div>
+            <span class="art-coordinate top">FIG. 01 / CONNECTED BY DESIGN</span
+            ><svg
+              class="bloom"
+              viewBox="0 0 600 600"
+              fill="none"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <g class="bloom-lines">
+                <ellipse
+                  class="petal"
+                  cx="300"
+                  cy="300"
+                  rx="74"
+                  ry="222"
+                  transform="rotate(0 300 300)"
+                />
+                <ellipse
+                  class="petal"
+                  cx="300"
+                  cy="300"
+                  rx="74"
+                  ry="222"
+                  transform="rotate(15 300 300)"
+                />
+                <ellipse
+                  class="petal"
+                  cx="300"
+                  cy="300"
+                  rx="74"
+                  ry="222"
+                  transform="rotate(30 300 300)"
+                />
+                <ellipse
+                  class="petal"
+                  cx="300"
+                  cy="300"
+                  rx="74"
+                  ry="222"
+                  transform="rotate(45 300 300)"
+                />
+                <ellipse
+                  class="petal"
+                  cx="300"
+                  cy="300"
+                  rx="74"
+                  ry="222"
+                  transform="rotate(60 300 300)"
+                />
+                <ellipse
+                  class="petal"
+                  cx="300"
+                  cy="300"
+                  rx="74"
+                  ry="222"
+                  transform="rotate(75 300 300)"
+                />
+                <ellipse
+                  class="petal"
+                  cx="300"
+                  cy="300"
+                  rx="74"
+                  ry="222"
+                  transform="rotate(90 300 300)"
+                />
+                <ellipse
+                  class="petal"
+                  cx="300"
+                  cy="300"
+                  rx="74"
+                  ry="222"
+                  transform="rotate(105 300 300)"
+                />
+                <ellipse
+                  class="petal"
+                  cx="300"
+                  cy="300"
+                  rx="74"
+                  ry="222"
+                  transform="rotate(120 300 300)"
+                />
+                <ellipse
+                  class="petal"
+                  cx="300"
+                  cy="300"
+                  rx="74"
+                  ry="222"
+                  transform="rotate(135 300 300)"
+                />
+                <ellipse
+                  class="petal"
+                  cx="300"
+                  cy="300"
+                  rx="74"
+                  ry="222"
+                  transform="rotate(150 300 300)"
+                />
+                <ellipse
+                  class="petal"
+                  cx="300"
+                  cy="300"
+                  rx="74"
+                  ry="222"
+                  transform="rotate(165 300 300)"
+                />
+              </g>
+              <circle class="bloom-core" cx="300" cy="300" r="56" />
+              <path
+                class="bloom-spark"
+                d="M300 270v60m-30-30h60m-51-21 42 42m-42 0 42-42"
+              /></svg
+            ><span class="art-note">Logic.<br /><em>With a pulse.</em></span
+            ><button
+              class="art-remix"
+              id="remix"
+              hidden
+              aria-label="Remix the geometric artwork"
+            >
+              ↻ <span>Remix</span></button
+            ><span class="art-coordinate bottom"
+              >ORIGINAL GENERATIVE STUDY</span
+            >
+          </div>
+        </div>
+        <div class="hero-foot">
+          <span><strong>6+</strong> YEARS OF BUILDING</span
+          ><span
+            >SENIOR FULL STACK ENGINEER<br /><b
+              >Vibe Coder &amp; Stylish UI/UX Designer</b
+            ></span
+          ><a href="#manifesto" class="scroll-cue"
+            >SCROLL TO CONNECT <span>↓</span></a
+          >
+        </div>
+      </section>
+      <section
+        id="manifesto"
+        class="manifesto section"
+        aria-labelledby="manifesto-title"
+      >
+        <p class="eyebrow">01 / THE WAY I THINK</p>
+        <h2 id="manifesto-title" class="manifesto-text">
+          An interface starts<br />a <em>conversation.</em><br />A system keeps
+          it <span>going.</span>
+        </h2>
+        <div class="manifesto-bottom">
+          <span class="big-asterisk" aria-hidden="true">✳</span>
+          <p>
+            From responsive Angular interfaces to reliable Node.js services, I
+            connect the visible and the invisible. Thoughtful experiences.
+            Systems built with care.
+          </p>
+        </div>
+      </section>
+      <section
+        class="engine-section"
+        id="engine"
+        aria-labelledby="engine-title"
+      >
+        <div class="engine-track" id="engine-track">
+          <div class="engine-pin">
+            <div class="engine-heading">
+              <div>
+                <p class="eyebrow">
+                  INSIDE THE WORK / AN INTERACTIVE BREAKDOWN
+                </p>
+                <h2 id="engine-title">
+                  One experience.<br /><em>Four connected layers.</em>
+                </h2>
+              </div>
+              <p>Open the system.<br />See what makes it work.</p>
+            </div>
+            <div class="engine-stage">
+              <span class="engine-caption">FIG. 02 / THE PORTFOLIO ENGINE</span
+              ><svg
+                id="engine-drawing"
+                viewBox="0 0 900 475"
+                fill="none"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path class="engine-axis" d="M35 235h830" />
+                <g
+                  class="engine-layer"
+                  data-engine-layer="0"
+                  transform="translate(-45.0 0)"
+                >
+                  <g class="engine-disc">
+                    <ellipse
+                      class="disc-side"
+                      cx="464"
+                      cy="235"
+                      rx="146"
+                      ry="180"
+                    />
+                    <path class="disc-side" d="M450 55h14m-14 360h14" />
+                    <ellipse
+                      class="disc-face"
+                      cx="450"
+                      cy="235"
+                      rx="146"
+                      ry="180"
+                    />
+                    <ellipse
+                      class="disc-ring"
+                      cx="450"
+                      cy="235"
+                      rx="130"
+                      ry="162"
+                    />
+                    <g class="disc-ticks">
+                      <path d="M585.00 235.00l7.00 0.00" />
+                      <path d="M583.85 256.41l6.94 1.17" />
+                      <path d="M580.40 277.45l6.76 2.33" />
+                      <path d="M574.72 297.76l6.47 3.44" />
+                      <path d="M566.91 317.00l6.06 4.50" />
+                      <path d="M557.10 334.84l5.55 5.48" />
+                      <path d="M545.46 350.97l4.95 6.36" />
+                      <path d="M532.18 365.11l4.26 7.14" />
+                      <path d="M517.50 377.03l3.50 7.79" />
+                      <path d="M501.66 386.52l2.68 8.31" />
+                      <path d="M484.94 393.41l1.81 8.69" />
+                      <path d="M467.62 397.60l0.91 8.92" />
+                      <path d="M450.00 399.00l0.00 9.00" />
+                      <path d="M432.38 397.60l-0.91 8.92" />
+                      <path d="M415.06 393.41l-1.81 8.69" />
+                      <path d="M398.34 386.52l-2.68 8.31" />
+                      <path d="M382.50 377.03l-3.50 7.79" />
+                      <path d="M367.82 365.11l-4.26 7.14" />
+                      <path d="M354.54 350.97l-4.95 6.36" />
+                      <path d="M342.90 334.84l-5.55 5.48" />
+                      <path d="M333.09 317.00l-6.06 4.50" />
+                      <path d="M325.28 297.76l-6.47 3.44" />
+                      <path d="M319.60 277.45l-6.76 2.33" />
+                      <path d="M316.15 256.41l-6.94 1.17" />
+                      <path d="M315.00 235.00l-7.00 0.00" />
+                      <path d="M316.15 213.59l-6.94 -1.17" />
+                      <path d="M319.60 192.55l-6.76 -2.33" />
+                      <path d="M325.28 172.24l-6.47 -3.44" />
+                      <path d="M333.09 153.00l-6.06 -4.50" />
+                      <path d="M342.90 135.16l-5.55 -5.48" />
+                      <path d="M354.54 119.03l-4.95 -6.36" />
+                      <path d="M367.82 104.89l-4.26 -7.14" />
+                      <path d="M382.50 92.97l-3.50 -7.79" />
+                      <path d="M398.34 83.48l-2.68 -8.31" />
+                      <path d="M415.06 76.59l-1.81 -8.69" />
+                      <path d="M432.38 72.40l-0.91 -8.92" />
+                      <path d="M450.00 71.00l-0.00 -9.00" />
+                      <path d="M467.62 72.40l0.91 -8.92" />
+                      <path d="M484.94 76.59l1.81 -8.69" />
+                      <path d="M501.66 83.48l2.68 -8.31" />
+                      <path d="M517.50 92.97l3.50 -7.79" />
+                      <path d="M532.18 104.89l4.26 -7.14" />
+                      <path d="M545.46 119.03l4.95 -6.36" />
+                      <path d="M557.10 135.16l5.55 -5.48" />
+                      <path d="M566.91 153.00l6.06 -4.50" />
+                      <path d="M574.72 172.24l6.47 -3.44" />
+                      <path d="M580.40 192.55l6.76 -2.33" />
+                      <path d="M583.85 213.59l6.94 -1.17" />
+                    </g>
+                    <ellipse
+                      class="disc-core"
+                      cx="450"
+                      cy="235"
+                      rx="98"
+                      ry="122"
+                    />
+                    <path
+                      class="disc-trace"
+                      d="M405 200h25v-24h40v24h24v72h-24v22h-40v-22h-25Z"
+                    />
+                    <text
+                      class="disc-number"
+                      x="450"
+                      y="250"
+                      text-anchor="middle"
+                    >
+                      01
+                    </text>
+                    <g class="disc-ports">
+                      <rect x="411" y="310" width="14" height="22" rx="3" />
+                      <rect x="436" y="310" width="14" height="22" rx="3" />
+                      <rect x="461" y="310" width="14" height="22" rx="3" />
+                      <rect x="486" y="310" width="14" height="22" rx="3" />
+                    </g>
+                  </g>
+                  <text class="disc-label" x="450" y="445" text-anchor="middle">
+                    INTERFACE
+                  </text>
+                </g>
+                <g
+                  class="engine-layer"
+                  data-engine-layer="1"
+                  transform="translate(-15.0 0)"
+                >
+                  <g class="engine-disc">
+                    <ellipse
+                      class="disc-side"
+                      cx="464"
+                      cy="235"
+                      rx="146"
+                      ry="180"
+                    />
+                    <path class="disc-side" d="M450 55h14m-14 360h14" />
+                    <ellipse
+                      class="disc-face"
+                      cx="450"
+                      cy="235"
+                      rx="146"
+                      ry="180"
+                    />
+                    <ellipse
+                      class="disc-ring"
+                      cx="450"
+                      cy="235"
+                      rx="130"
+                      ry="162"
+                    />
+                    <g class="disc-ticks">
+                      <path d="M585.00 235.00l7.00 0.00" />
+                      <path d="M583.85 256.41l6.94 1.17" />
+                      <path d="M580.40 277.45l6.76 2.33" />
+                      <path d="M574.72 297.76l6.47 3.44" />
+                      <path d="M566.91 317.00l6.06 4.50" />
+                      <path d="M557.10 334.84l5.55 5.48" />
+                      <path d="M545.46 350.97l4.95 6.36" />
+                      <path d="M532.18 365.11l4.26 7.14" />
+                      <path d="M517.50 377.03l3.50 7.79" />
+                      <path d="M501.66 386.52l2.68 8.31" />
+                      <path d="M484.94 393.41l1.81 8.69" />
+                      <path d="M467.62 397.60l0.91 8.92" />
+                      <path d="M450.00 399.00l0.00 9.00" />
+                      <path d="M432.38 397.60l-0.91 8.92" />
+                      <path d="M415.06 393.41l-1.81 8.69" />
+                      <path d="M398.34 386.52l-2.68 8.31" />
+                      <path d="M382.50 377.03l-3.50 7.79" />
+                      <path d="M367.82 365.11l-4.26 7.14" />
+                      <path d="M354.54 350.97l-4.95 6.36" />
+                      <path d="M342.90 334.84l-5.55 5.48" />
+                      <path d="M333.09 317.00l-6.06 4.50" />
+                      <path d="M325.28 297.76l-6.47 3.44" />
+                      <path d="M319.60 277.45l-6.76 2.33" />
+                      <path d="M316.15 256.41l-6.94 1.17" />
+                      <path d="M315.00 235.00l-7.00 0.00" />
+                      <path d="M316.15 213.59l-6.94 -1.17" />
+                      <path d="M319.60 192.55l-6.76 -2.33" />
+                      <path d="M325.28 172.24l-6.47 -3.44" />
+                      <path d="M333.09 153.00l-6.06 -4.50" />
+                      <path d="M342.90 135.16l-5.55 -5.48" />
+                      <path d="M354.54 119.03l-4.95 -6.36" />
+                      <path d="M367.82 104.89l-4.26 -7.14" />
+                      <path d="M382.50 92.97l-3.50 -7.79" />
+                      <path d="M398.34 83.48l-2.68 -8.31" />
+                      <path d="M415.06 76.59l-1.81 -8.69" />
+                      <path d="M432.38 72.40l-0.91 -8.92" />
+                      <path d="M450.00 71.00l-0.00 -9.00" />
+                      <path d="M467.62 72.40l0.91 -8.92" />
+                      <path d="M484.94 76.59l1.81 -8.69" />
+                      <path d="M501.66 83.48l2.68 -8.31" />
+                      <path d="M517.50 92.97l3.50 -7.79" />
+                      <path d="M532.18 104.89l4.26 -7.14" />
+                      <path d="M545.46 119.03l4.95 -6.36" />
+                      <path d="M557.10 135.16l5.55 -5.48" />
+                      <path d="M566.91 153.00l6.06 -4.50" />
+                      <path d="M574.72 172.24l6.47 -3.44" />
+                      <path d="M580.40 192.55l6.76 -2.33" />
+                      <path d="M583.85 213.59l6.94 -1.17" />
+                    </g>
+                    <ellipse
+                      class="disc-core"
+                      cx="450"
+                      cy="235"
+                      rx="98"
+                      ry="122"
+                    />
+                    <path
+                      class="disc-trace"
+                      d="M405 200h25v-24h40v24h24v72h-24v22h-40v-22h-25Z"
+                    />
+                    <text
+                      class="disc-number"
+                      x="450"
+                      y="250"
+                      text-anchor="middle"
+                    >
+                      02
+                    </text>
+                    <g class="disc-ports">
+                      <rect x="411" y="310" width="14" height="22" rx="3" />
+                      <rect x="436" y="310" width="14" height="22" rx="3" />
+                      <rect x="461" y="310" width="14" height="22" rx="3" />
+                      <rect x="486" y="310" width="14" height="22" rx="3" />
+                    </g>
+                  </g>
+                  <text class="disc-label" x="450" y="445" text-anchor="middle">
+                    SERVICES
+                  </text>
+                </g>
+                <g
+                  class="engine-layer"
+                  data-engine-layer="2"
+                  transform="translate(15.0 0)"
+                >
+                  <g class="engine-disc">
+                    <ellipse
+                      class="disc-side"
+                      cx="464"
+                      cy="235"
+                      rx="146"
+                      ry="180"
+                    />
+                    <path class="disc-side" d="M450 55h14m-14 360h14" />
+                    <ellipse
+                      class="disc-face"
+                      cx="450"
+                      cy="235"
+                      rx="146"
+                      ry="180"
+                    />
+                    <ellipse
+                      class="disc-ring"
+                      cx="450"
+                      cy="235"
+                      rx="130"
+                      ry="162"
+                    />
+                    <g class="disc-ticks">
+                      <path d="M585.00 235.00l7.00 0.00" />
+                      <path d="M583.85 256.41l6.94 1.17" />
+                      <path d="M580.40 277.45l6.76 2.33" />
+                      <path d="M574.72 297.76l6.47 3.44" />
+                      <path d="M566.91 317.00l6.06 4.50" />
+                      <path d="M557.10 334.84l5.55 5.48" />
+                      <path d="M545.46 350.97l4.95 6.36" />
+                      <path d="M532.18 365.11l4.26 7.14" />
+                      <path d="M517.50 377.03l3.50 7.79" />
+                      <path d="M501.66 386.52l2.68 8.31" />
+                      <path d="M484.94 393.41l1.81 8.69" />
+                      <path d="M467.62 397.60l0.91 8.92" />
+                      <path d="M450.00 399.00l0.00 9.00" />
+                      <path d="M432.38 397.60l-0.91 8.92" />
+                      <path d="M415.06 393.41l-1.81 8.69" />
+                      <path d="M398.34 386.52l-2.68 8.31" />
+                      <path d="M382.50 377.03l-3.50 7.79" />
+                      <path d="M367.82 365.11l-4.26 7.14" />
+                      <path d="M354.54 350.97l-4.95 6.36" />
+                      <path d="M342.90 334.84l-5.55 5.48" />
+                      <path d="M333.09 317.00l-6.06 4.50" />
+                      <path d="M325.28 297.76l-6.47 3.44" />
+                      <path d="M319.60 277.45l-6.76 2.33" />
+                      <path d="M316.15 256.41l-6.94 1.17" />
+                      <path d="M315.00 235.00l-7.00 0.00" />
+                      <path d="M316.15 213.59l-6.94 -1.17" />
+                      <path d="M319.60 192.55l-6.76 -2.33" />
+                      <path d="M325.28 172.24l-6.47 -3.44" />
+                      <path d="M333.09 153.00l-6.06 -4.50" />
+                      <path d="M342.90 135.16l-5.55 -5.48" />
+                      <path d="M354.54 119.03l-4.95 -6.36" />
+                      <path d="M367.82 104.89l-4.26 -7.14" />
+                      <path d="M382.50 92.97l-3.50 -7.79" />
+                      <path d="M398.34 83.48l-2.68 -8.31" />
+                      <path d="M415.06 76.59l-1.81 -8.69" />
+                      <path d="M432.38 72.40l-0.91 -8.92" />
+                      <path d="M450.00 71.00l-0.00 -9.00" />
+                      <path d="M467.62 72.40l0.91 -8.92" />
+                      <path d="M484.94 76.59l1.81 -8.69" />
+                      <path d="M501.66 83.48l2.68 -8.31" />
+                      <path d="M517.50 92.97l3.50 -7.79" />
+                      <path d="M532.18 104.89l4.26 -7.14" />
+                      <path d="M545.46 119.03l4.95 -6.36" />
+                      <path d="M557.10 135.16l5.55 -5.48" />
+                      <path d="M566.91 153.00l6.06 -4.50" />
+                      <path d="M574.72 172.24l6.47 -3.44" />
+                      <path d="M580.40 192.55l6.76 -2.33" />
+                      <path d="M583.85 213.59l6.94 -1.17" />
+                    </g>
+                    <ellipse
+                      class="disc-core"
+                      cx="450"
+                      cy="235"
+                      rx="98"
+                      ry="122"
+                    />
+                    <path
+                      class="disc-trace"
+                      d="M405 200h25v-24h40v24h24v72h-24v22h-40v-22h-25Z"
+                    />
+                    <text
+                      class="disc-number"
+                      x="450"
+                      y="250"
+                      text-anchor="middle"
+                    >
+                      03
+                    </text>
+                    <g class="disc-ports">
+                      <rect x="411" y="310" width="14" height="22" rx="3" />
+                      <rect x="436" y="310" width="14" height="22" rx="3" />
+                      <rect x="461" y="310" width="14" height="22" rx="3" />
+                      <rect x="486" y="310" width="14" height="22" rx="3" />
+                    </g>
+                  </g>
+                  <text class="disc-label" x="450" y="445" text-anchor="middle">
+                    DATA
+                  </text>
+                </g>
+                <g
+                  class="engine-layer"
+                  data-engine-layer="3"
+                  transform="translate(45.0 0)"
+                >
+                  <g class="engine-disc">
+                    <ellipse
+                      class="disc-side"
+                      cx="464"
+                      cy="235"
+                      rx="146"
+                      ry="180"
+                    />
+                    <path class="disc-side" d="M450 55h14m-14 360h14" />
+                    <ellipse
+                      class="disc-face"
+                      cx="450"
+                      cy="235"
+                      rx="146"
+                      ry="180"
+                    />
+                    <ellipse
+                      class="disc-ring"
+                      cx="450"
+                      cy="235"
+                      rx="130"
+                      ry="162"
+                    />
+                    <g class="disc-ticks">
+                      <path d="M585.00 235.00l7.00 0.00" />
+                      <path d="M583.85 256.41l6.94 1.17" />
+                      <path d="M580.40 277.45l6.76 2.33" />
+                      <path d="M574.72 297.76l6.47 3.44" />
+                      <path d="M566.91 317.00l6.06 4.50" />
+                      <path d="M557.10 334.84l5.55 5.48" />
+                      <path d="M545.46 350.97l4.95 6.36" />
+                      <path d="M532.18 365.11l4.26 7.14" />
+                      <path d="M517.50 377.03l3.50 7.79" />
+                      <path d="M501.66 386.52l2.68 8.31" />
+                      <path d="M484.94 393.41l1.81 8.69" />
+                      <path d="M467.62 397.60l0.91 8.92" />
+                      <path d="M450.00 399.00l0.00 9.00" />
+                      <path d="M432.38 397.60l-0.91 8.92" />
+                      <path d="M415.06 393.41l-1.81 8.69" />
+                      <path d="M398.34 386.52l-2.68 8.31" />
+                      <path d="M382.50 377.03l-3.50 7.79" />
+                      <path d="M367.82 365.11l-4.26 7.14" />
+                      <path d="M354.54 350.97l-4.95 6.36" />
+                      <path d="M342.90 334.84l-5.55 5.48" />
+                      <path d="M333.09 317.00l-6.06 4.50" />
+                      <path d="M325.28 297.76l-6.47 3.44" />
+                      <path d="M319.60 277.45l-6.76 2.33" />
+                      <path d="M316.15 256.41l-6.94 1.17" />
+                      <path d="M315.00 235.00l-7.00 0.00" />
+                      <path d="M316.15 213.59l-6.94 -1.17" />
+                      <path d="M319.60 192.55l-6.76 -2.33" />
+                      <path d="M325.28 172.24l-6.47 -3.44" />
+                      <path d="M333.09 153.00l-6.06 -4.50" />
+                      <path d="M342.90 135.16l-5.55 -5.48" />
+                      <path d="M354.54 119.03l-4.95 -6.36" />
+                      <path d="M367.82 104.89l-4.26 -7.14" />
+                      <path d="M382.50 92.97l-3.50 -7.79" />
+                      <path d="M398.34 83.48l-2.68 -8.31" />
+                      <path d="M415.06 76.59l-1.81 -8.69" />
+                      <path d="M432.38 72.40l-0.91 -8.92" />
+                      <path d="M450.00 71.00l-0.00 -9.00" />
+                      <path d="M467.62 72.40l0.91 -8.92" />
+                      <path d="M484.94 76.59l1.81 -8.69" />
+                      <path d="M501.66 83.48l2.68 -8.31" />
+                      <path d="M517.50 92.97l3.50 -7.79" />
+                      <path d="M532.18 104.89l4.26 -7.14" />
+                      <path d="M545.46 119.03l4.95 -6.36" />
+                      <path d="M557.10 135.16l5.55 -5.48" />
+                      <path d="M566.91 153.00l6.06 -4.50" />
+                      <path d="M574.72 172.24l6.47 -3.44" />
+                      <path d="M580.40 192.55l6.76 -2.33" />
+                      <path d="M583.85 213.59l6.94 -1.17" />
+                    </g>
+                    <ellipse
+                      class="disc-core"
+                      cx="450"
+                      cy="235"
+                      rx="98"
+                      ry="122"
+                    />
+                    <path
+                      class="disc-trace"
+                      d="M405 200h25v-24h40v24h24v72h-24v22h-40v-22h-25Z"
+                    />
+                    <text
+                      class="disc-number"
+                      x="450"
+                      y="250"
+                      text-anchor="middle"
+                    >
+                      04
+                    </text>
+                    <g class="disc-ports">
+                      <rect x="411" y="310" width="14" height="22" rx="3" />
+                      <rect x="436" y="310" width="14" height="22" rx="3" />
+                      <rect x="461" y="310" width="14" height="22" rx="3" />
+                      <rect x="486" y="310" width="14" height="22" rx="3" />
+                    </g>
+                  </g>
+                  <text class="disc-label" x="450" y="445" text-anchor="middle">
+                    DELIVERY
+                  </text>
+                </g></svg
+              ><span class="engine-state" id="engine-state"
+                >ASSEMBLED / 00%</span
+              >
+            </div>
+            <div class="engine-controls" hidden>
+              <button
+                id="engine-toggle"
+                aria-expanded="false"
+                aria-controls="engine-drawing"
+              >
+                Open the system <span>↗</span></button
+              ><label for="engine-scrub"
+                >CLOSED<input
+                  id="engine-scrub"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="0"
+                  aria-label="Open or close the portfolio engine"
+                />OPEN</label
+              ><button id="engine-scroll" aria-pressed="true">
+                Follow scroll
+              </button>
+            </div>
+            <div
+              class="engine-selector"
+              role="group"
+              aria-label="Explore a system layer"
+            >
+              <button data-layer-detail="0" aria-pressed="true" hidden>
+                01 / Interface</button
+              ><button data-layer-detail="1" aria-pressed="false" hidden>
+                02 / Services</button
+              ><button data-layer-detail="2" aria-pressed="false" hidden>
+                03 / Data</button
+              ><button data-layer-detail="3" aria-pressed="false" hidden>
+                04 / Delivery
+              </button>
+            </div>
+            <p
+              class="engine-description"
+              id="engine-description"
+              aria-live="polite"
+            >
+              Angular, TypeScript, and RxJS turn workflows into responsive
+              interfaces.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section work-section"
+        id="work"
+        aria-labelledby="work-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 / SELECTED WORK</p>
+            <h2 id="work-title">Two ideas.<br /><em>End to end.</em></h2>
+          </div>
+          <p>
+            Personal projects, from frontend to backend.<br />Explore the
+            application. Follow the code.
+          </p>
+        </div>
+        <article class="work-card chat-work">
+          <div class="work-visual">
+            <div class="visual-top">
+              <span>01 / CHAT SYSTEM</span
+              ><span class="visual-badge">INTERFACE STUDY</span>
+            </div>
+            <div class="chat-study">
+              <div class="chat-sidebar" aria-hidden="true">
+                <b>c<span>✳</span></b
+                ><i></i><i></i><i></i>
+              </div>
+              <div class="chat-window">
+                <div class="chat-heading">
+                  <span class="chat-avatar">M</span>
+                  <div>
+                    Connected ideas<small>PRIVATE &amp; GROUP MESSAGING</small>
+                  </div>
+                  <span class="chat-online" aria-hidden="true"></span>
+                </div>
+                <div class="chat-messages">
+                  <p class="bubble incoming">
+                    Every connection starts with a hello.<small
+                      >THE INTERFACE</small
+                    >
+                  </p>
+                  <p class="bubble outgoing">
+                    And a system that listens.<small>THE BACKEND</small>
+                  </p>
+                  <p
+                    class="bubble incoming demo-message"
+                    id="message-demo"
+                    aria-live="polite"
+                  >
+                    Let’s build something together.
+                  </p>
+                </div>
+                <button id="send-demo" class="send-demo" hidden>
+                  Send a little hello <span>↑</span>
+                </button>
+              </div>
+            </div>
+            <div class="visual-bottom">
+              <span>ANGULAR ↔ SOCKET.IO ↔ NODE.JS</span
+              ><span>REAL-TIME CONNECTIONS</span>
+            </div>
+          </div>
+          <div class="work-copy">
+            <p class="eyebrow">FULL-STACK / REAL-TIME MESSAGING</p>
+            <h3>Chat System<span>↗</span></h3>
+            <p>
+              One connected application for private conversations, group
+              messaging, and live presence. Angular on the surface; Node.js,
+              caching, and event-driven services underneath.
+            </p>
+            <ul class="tags">
+              <li>Angular</li>
+              <li>Socket.IO</li>
+              <li>Node.js</li>
+              <li>Redis</li>
+              <li>MySQL / MongoDB</li>
+              <li>AWS</li>
+            </ul>
+            <button class="project-open" data-project="chat" hidden>
+              Open project story <span>↗</span>
+            </button>
+            <div class="project-actions">
+              <a
+                class="pill primary"
+                href="https://maheshpcse.github.io/chat-app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open live app ↗</a
+              ><a
+                href="https://github.com/maheshpcse/chat-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat System frontend repository"
+                >Frontend ↗</a
+              ><a
+                href="https://github.com/maheshpcse/chat-system"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat System backend repository"
+                >Backend ↗</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="work-card bank-work">
+          <div class="work-visual">
+            <div class="visual-top">
+              <span>02 / BANKING SYSTEM</span
+              ><span class="visual-badge">INTERFACE STUDY</span>
+            </div>
+            <div class="bank-study">
+              <div class="bank-card">
+                <span>CONNECTED BANKING <b>✳</b></span
+                ><svg
+                  viewBox="0 0 48 36"
+                  fill="none"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <rect x="1" y="1" width="46" height="34" rx="7" />
+                  <path
+                    d="M16 1v34M32 1v34M1 12h15m16 0h15M1 24h15m16 0h15M16 18h16"
+                  /></svg
+                ><strong>•••• &nbsp; •••• &nbsp; •••• &nbsp; 2026</strong
+                ><small>A DEMO OF CONNECTED WORKFLOWS</small>
+              </div>
+              <div class="transaction-flow">
+                <span>ACCOUNT</span
+                ><svg viewBox="0 0 360 64" fill="none" aria-hidden="true">
+                  <path
+                    class="transfer-line"
+                    d="M12 32h100q15 0 15-15v0q0-12 15-12h74q15 0 15 12v0q0 15 15 15h102"
+                  />
+                  <circle
+                    class="transfer-dot"
+                    cx="0"
+                    cy="0"
+                    r="5"
+                    transform="translate(12 32)"
+                  /></svg
+                ><span>BILLING</span>
+              </div>
+              <button id="transfer-demo" class="transfer-demo" hidden>
+                Follow a transaction <span>↗</span>
+              </button>
+              <p
+                id="transfer-status"
+                class="transfer-status"
+                aria-live="polite"
+              >
+                Account → authorization → billing
+              </p>
+            </div>
+            <div class="visual-bottom">
+              <span>INTERFACE ↔ API ↔ DATA</span
+              ><span>ONE CONNECTED WORKFLOW</span>
+            </div>
+          </div>
+          <div class="work-copy">
+            <p class="eyebrow">FULL-STACK / FINANCIAL WORKFLOWS</p>
+            <h3>Banking System<span>↗</span></h3>
+            <p>
+              Account activity, peer transfers, card controls, and billing. An
+              Angular interface connected to authenticated services with
+              role-based access and transaction history.
+            </p>
+            <ul class="tags">
+              <li>Angular</li>
+              <li>TypeScript</li>
+              <li>RxJS</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>JWT</li>
+            </ul>
+            <button class="project-open" data-project="bank" hidden>
+              Open project story <span>↗</span>
+            </button>
+            <div class="project-actions">
+              <a
+                class="pill primary"
+                href="https://maheshpcse.github.io/banking-system/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open live app ↗</a
+              ><a
+                href="https://github.com/maheshpcse/banking-system"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Banking System frontend repository"
+                >Frontend ↗</a
+              ><a
+                href="https://github.com/maheshpcse/banking-system-server"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Banking System backend repository"
+                >Backend ↗</a
+              >
+            </div>
+          </div>
+        </article>
+      </section>
+      <section
+        class="section journey"
+        id="journey"
+        aria-labelledby="journey-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 / BUILT OVER TIME</p>
+            <h2 id="journey-title">The work<br /><em>behind the craft.</em></h2>
+          </div>
+          <a class="text-link" href="./assets/Mahesh-Resume.pdf" download
+            >Read the complete résumé ↗</a
+          >
+        </div>
+        <div class="timeline">
+          <div class="timeline-track" aria-hidden="true"><i></i></div>
+          <article>
+            <span class="timeline-node" aria-hidden="true"></span>
+            <p class="timeline-date">
+              2022 — 2026<small>MAY — JUN / BENGALURU</small>
+            </p>
+            <div>
+              <p class="eyebrow">SENIOR FULL STACK DEVELOPER</p>
+              <h3>911 Fintech Solutions</h3>
+              <p>
+                Merchant onboarding, billing, and chargeback workflows. Angular
+                interfaces, Node.js REST APIs, optimized MySQL queries, Redis
+                caching, and AWS delivery.
+              </p>
+              <ul class="tags">
+                <li>Fintech systems</li>
+                <li>Jenkins / CI/CD</li>
+                <li>Unit &amp; integration tests</li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <span class="timeline-node" aria-hidden="true"></span>
+            <p class="timeline-date">
+              2019 — 2022<small>AUG — APR / VISAKHAPATNAM</small>
+            </p>
+            <div>
+              <p class="eyebrow">MEAN STACK DEVELOPER</p>
+              <h3>Akrivia Automation</h3>
+              <p>
+                Responsive Angular applications and secure Node.js APIs.
+                Authentication, data integrity, and cloud deployments with AWS
+                and Heroku.
+              </p>
+              <ul class="tags">
+                <li>MEAN stack</li>
+                <li>WebSockets</li>
+                <li>RabbitMQ</li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <span class="timeline-node" aria-hidden="true"></span>
+            <p class="timeline-date">2014 — 2018<small>RK VALLEY</small></p>
+            <div>
+              <p class="eyebrow">THE FOUNDATION</p>
+              <h3>Computer Science, IIIT</h3>
+              <p>
+                B.Tech, IIIT (RGUKT). A foundation in computer science that
+                became a practice in building. CGPA: 7.9/10.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section
+        class="section toolkit"
+        id="toolkit"
+        aria-labelledby="toolkit-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">04 / A CONNECTED TOOLKIT</p>
+            <h2 id="toolkit-title">
+              Different tools.<br /><em>Shared possibilities.</em>
+            </h2>
+          </div>
+          <p>
+            Technology is a means to a better experience.<br />Choose a layer to
+            explore the connections.
+          </p>
+        </div>
+        <div class="tool-filters" role="group" aria-label="Filter technologies">
+          <button data-filter="all" aria-pressed="true" hidden>
+            All connections</button
+          ><button data-filter="interface" aria-pressed="false" hidden>
+            Interface</button
+          ><button data-filter="services" aria-pressed="false" hidden>
+            Services &amp; data</button
+          ><button data-filter="delivery" aria-pressed="false" hidden>
+            Delivery
+          </button>
+        </div>
+        <div class="tool-grid">
+          <article class="tool-card" data-layer="interface">
+            <svg
+              viewBox="0 0 32 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.3"
+              aria-hidden="true"
+            >
+              <rect x="3" y="4" width="26" height="24" rx="5" />
+              <path d="M3 11h26M11 11v17M7 8h1m3 0h1" />
+            </svg>
+            <h3>Angular</h3>
+            <p>Responsive applications</p>
+            <span aria-hidden="true">↗</span>
+          </article>
+          <article class="tool-card" data-layer="interface">
+            <svg
+              viewBox="0 0 32 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.3"
+              aria-hidden="true"
+            >
+              <rect x="3" y="4" width="26" height="24" rx="5" />
+              <path d="M3 11h26M11 11v17M7 8h1m3 0h1" />
+            </svg>
+            <h3>TypeScript</h3>
+            <p>Typed interfaces</p>
+            <span aria-hidden="true">↗</span>
+          </article>
+          <article class="tool-card" data-layer="interface">
+            <svg
+              viewBox="0 0 32 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.3"
+              aria-hidden="true"
+            >
+              <rect x="3" y="4" width="26" height="24" rx="5" />
+              <path d="M3 11h26M11 11v17M7 8h1m3 0h1" />
+            </svg>
+            <h3>RxJS / NgRx</h3>
+            <p>Reactive state</p>
+            <span aria-hidden="true">↗</span>
+          </article>
+          <article class="tool-card" data-layer="services">
+            <svg
+              viewBox="0 0 32 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.3"
+              aria-hidden="true"
+            >
+              <path d="m16 2 13 7v14l-13 7-13-7V9Zm-13 7 13 7 13-7m-13 7v14" />
+            </svg>
+            <h3>Node.js</h3>
+            <p>Application services</p>
+            <span aria-hidden="true">↗</span>
+          </article>
+          <article class="tool-card" data-layer="services">
+            <svg
+              viewBox="0 0 32 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.3"
+              aria-hidden="true"
+            >
+              <path d="m16 2 13 7v14l-13 7-13-7V9Zm-13 7 13 7 13-7m-13 7v14" />
+            </svg>
+            <h3>Express</h3>
+            <p>REST APIs</p>
+            <span aria-hidden="true">↗</span>
+          </article>
+          <article class="tool-card" data-layer="services">
+            <svg
+              viewBox="0 0 32 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.3"
+              aria-hidden="true"
+            >
+              <path d="m16 2 13 7v14l-13 7-13-7V9Zm-13 7 13 7 13-7m-13 7v14" />
+            </svg>
+            <h3>MySQL / MongoDB</h3>
+            <p>Structured data</p>
+            <span aria-hidden="true">↗</span>
+          </article>
+          <article class="tool-card" data-layer="services">
+            <svg
+              viewBox="0 0 32 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.3"
+              aria-hidden="true"
+            >
+              <path d="m16 2 13 7v14l-13 7-13-7V9Zm-13 7 13 7 13-7m-13 7v14" />
+            </svg>
+            <h3>Redis</h3>
+            <p>Caching & events</p>
+            <span aria-hidden="true">↗</span>
+          </article>
+          <article class="tool-card" data-layer="delivery">
+            <svg
+              viewBox="0 0 32 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.3"
+              aria-hidden="true"
+            >
+              <path
+                d="M8 23a6 6 0 0 1-1-12 9 9 0 0 1 17-1 7 7 0 0 1 1 13M11 24l5-5 5 5m-5-5v11"
+              />
+            </svg>
+            <h3>AWS EC2</h3>
+            <p>Cloud deployment</p>
+            <span aria-hidden="true">↗</span>
+          </article>
+          <article class="tool-card" data-layer="delivery">
+            <svg
+              viewBox="0 0 32 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.3"
+              aria-hidden="true"
+            >
+              <path
+                d="M8 23a6 6 0 0 1-1-12 9 9 0 0 1 17-1 7 7 0 0 1 1 13M11 24l5-5 5 5m-5-5v11"
+              />
+            </svg>
+            <h3>Jenkins / CI/CD</h3>
+            <p>Reliable delivery</p>
+            <span aria-hidden="true">↗</span>
+          </article>
+          <article class="tool-card" data-layer="delivery">
+            <svg
+              viewBox="0 0 32 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.3"
+              aria-hidden="true"
+            >
+              <path
+                d="M8 23a6 6 0 0 1-1-12 9 9 0 0 1 17-1 7 7 0 0 1 1 13M11 24l5-5 5 5m-5-5v11"
+              />
+            </svg>
+            <h3>RabbitMQ</h3>
+            <p>Message-driven systems</p>
+            <span aria-hidden="true">↗</span>
+          </article>
+        </div>
+        <p class="tool-note" id="tool-status" aria-live="polite">
+          Showing the connected toolkit. Additional resume-listed skills include
+          Python, Hapi, GraphQL, PostgreSQL, MSSQL, GCP, Kafka, and Docker.
+        </p>
+        <div class="design-note">
+          <span aria-hidden="true">✳</span>
+          <div>
+            <p class="eyebrow">CREATIVE PRACTICE</p>
+            <h3>Vibe Coder &amp; Stylish UI/UX Designer</h3>
+            <p>
+              AI-assisted building. Clear hierarchy. Thoughtful interaction. The
+              detail is part of the system.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section contact"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <p class="eyebrow">05 / THE NEXT CONNECTION</p>
+        <h2 id="contact-title">
+          Let’s make<br /><em>something matter.</em
+          ><span aria-hidden="true">↗</span>
+        </h2>
+        <div class="contact-row">
+          <a class="contact-email" href="mailto:maheshmahi1599@gmail.com"
+            >maheshmahi1599@gmail.com <span>↗</span></a
+          >
+          <p>Engineering that works.<br />Design that feels right.</p>
+        </div>
+        <div class="contact-links">
+          <a
+            href="https://github.com/maheshpcse"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub ↗</a
+          ><a
+            href="https://www.linkedin.com/in/p-mahesh-89266a183"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn ↗</a
+          ><a href="./assets/Mahesh-Resume.pdf" download>Résumé ↓</a
+          ><a href="./portfolio.html">Classic portfolio ↗</a>
+        </div>
+      </section>
+    </main>
+    <dialog id="project-story" aria-labelledby="story-title">
+      <div class="story-shutters" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="story-shell">
+        <div class="story-top">
+          <span>INSIDE THE PROJECT</span
+          ><button id="story-close" aria-label="Close project story">
+            Close <span>×</span>
+          </button>
+        </div>
+        <div class="story-content">
+          <p class="eyebrow" id="story-kicker"></p>
+          <h2 id="story-title"></h2>
+          <p id="story-intro"></p>
+          <div id="story-layers"></div>
+          <div id="story-links"></div>
+        </div>
+        <div class="story-bottom">INTERFACE → SERVICES → DATA → DELIVERY</div>
+      </div>
+    </dialog>
+    <footer class="motion-footer">
+      <span>MAHESH PACHAPALAM</span
+      ><span
+        >BUILT WITH INTENT. MOVED BY
+        <a href="https://animejs.com/" target="_blank" rel="noopener noreferrer"
+          >ANIME.JS ↗</a
+        ></span
+      ><a href="#top">BACK TO TOP ↑</a>
+    </footer>
+  </body>
+</html>

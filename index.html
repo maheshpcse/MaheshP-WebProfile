@@ -1,0 +1,1097 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Pachapalam Mahesh — Senior Full Stack Engineer. Full-stack engineering, professional experience, and selected projects."
+    />
+    <meta name="theme-color" content="#111019" />
+    <meta property="og:title" content="Mahesh — Full Stack Engineer" />
+    <meta
+      property="og:description"
+      content="6+ years of full-stack engineering. Experience, selected projects, skills, and contact details."
+    />
+    <meta property="og:type" content="website" />
+    <title>Mahesh — Full Stack Engineer</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <script>
+      try {
+        const t = localStorage.getItem("mahesh-theme");
+        document.documentElement.dataset.theme =
+          t === "light" || t === "dark"
+            ? t
+            : matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark";
+      } catch {}
+    </script>
+    <script type="module" src="./src/main.ts"></script>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <dialog
+      id="cinema-intro"
+      aria-labelledby="cinema-title"
+      aria-describedby="cinema-description"
+    >
+      <div class="cinema-frame" aria-hidden="true"></div>
+      <div class="cinema-glow" aria-hidden="true"></div>
+      <svg
+        class="cinema-trails"
+        viewBox="0 0 1440 900"
+        preserveAspectRatio="xMidYMid slice"
+        fill="none"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <ellipse
+          cx="720"
+          cy="450"
+          rx="650"
+          ry="220"
+          transform="rotate(-28 720 450)"
+        />
+        <ellipse
+          cx="720"
+          cy="450"
+          rx="690"
+          ry="260"
+          transform="rotate(-28 720 450)"
+        />
+        <path
+          class="cinema-streak"
+          pathLength="1"
+          d="M-40 850C220 600 640 140 1480 140"
+        />
+      </svg>
+      <div class="cinema-top">
+        <span class="cinema-monogram">m<span>✳</span></span
+        ><span>CODE / CRAFT / CONNECTION</span>
+      </div>
+      <div class="cinema-titles">
+        <p class="cinema-kicker">A PORTFOLIO BY</p>
+        <h1 id="cinema-title" aria-label="Mahesh Pachapalam">
+          <span class="cinema-name" aria-hidden="true"
+            ><span>M</span><span>A</span><span>H</span><span>E</span
+            ><span>S</span><span>H</span></span
+          ><em aria-hidden="true">Pachapalam.</em>
+        </h1>
+        <p id="cinema-description">
+          Engineering the logic.<br class="cinema-mobile-break" />
+          Designing the feeling.
+        </p>
+        <p class="cinema-role">
+          SENIOR FULL STACK ENGINEER <span>✳</span> UI/UX DESIGNER
+        </p>
+      </div>
+      <div class="cinema-bottom">
+        <div class="cinema-next">
+          <span>THE STORY STARTS HERE</span>
+          <div class="cinema-timeline" aria-hidden="true"><i></i></div>
+          <small>Opening the portfolio</small>
+        </div>
+        <button type="button" id="cinema-skip">
+          Skip intro <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+    </dialog>
+    <a class="skip-link" href="#identity">Skip to profile</a>
+    <header class="site-header">
+      <a class="signature" href="#identity" aria-label="Mahesh — read profile"
+        >m<span class="signature-star">✳</span
+        ><span class="signature-name"
+          >MAHESH<span>FULL STACK ENGINEER</span></span
+        ></a
+      >
+      <nav aria-label="Profile navigation">
+        <a href="#career">Experience</a><a href="#projects">Projects</a
+        ><a
+          href="https://github.com/maheshpcse"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub ↗</a
+        ><a href="#contact">Contact</a>
+      </nav>
+      <div class="header-tools">
+        <button
+          id="theme-toggle"
+          class="icon-button"
+          type="button"
+          aria-label="Switch to light theme"
+          hidden
+        >
+          ☀</button
+        ><a class="resume-link" href="./assets/Mahesh-Resume.pdf" download
+          >Resume <span>↗</span></a
+        >
+      </div>
+    </header>
+
+    <div id="reading-progress" aria-hidden="true"></div>
+    <main id="profile" aria-label="Mahesh’s professional journey">
+      <section id="identity" class="chapter" aria-labelledby="identity-title">
+        <div class="chapter-copy">
+          <p class="eyebrow">
+            <span class="chapter-seed"></span> PACHAPALAM MAHESH
+          </p>
+          <h1 id="identity-title">
+            Mahesh.<br />Full Stack <em>Engineer.</em>
+          </h1>
+          <p class="intro">
+            I’m <strong>Mahesh.</strong> Senior Full Stack Engineer.<br />I turn
+            complex ideas into connected, reliable systems.
+          </p>
+
+          <div class="skill-pill">
+            <span class="spark-icon" aria-hidden="true">✳</span> Vibe Coder
+            <i>&amp;</i> Stylish UI/UX Designer
+          </div>
+          <div class="identity-notes">
+            <span>6+ years of building</span><i></i
+            ><span>Hyderabad, India</span>
+          </div>
+        </div>
+        <div class="reading-intro">
+          <p>
+            Pachapalam Mahesh — Senior Full Stack Engineer with experience in
+            scalable backend services, modern web applications, cloud delivery,
+            and distributed systems.
+          </p>
+          <a href="./assets/Mahesh-Resume.pdf" download
+            >Download the complete resume ↗</a
+          >
+        </div>
+      </section>
+      <section id="career" class="chapter" aria-labelledby="career-title">
+        <div class="chapter-copy">
+          <p class="eyebrow">01 / THE PATH THAT SHAPED ME</p>
+          <h2 id="career-title">
+            Built over time.<br /><em>Connected by craft.</em>
+          </h2>
+          <p class="intro">
+            From computer science foundations to full-stack applications and
+            production fintech systems.
+          </p>
+        </div>
+        <div class="reading-details">
+          <article id="education">
+            <p class="eyebrow">2014 — 2018 / RK VALLEY</p>
+            <h3>A foundation in computer science.</h3>
+            <p>B.Tech in Computer Science, IIIT (RGUKT). CGPA: 7.9/10.</p>
+          </article>
+          <article id="akrivia">
+            <p class="eyebrow">AUG 2019 — APR 2022 / VISAKHAPATNAM</p>
+            <h3>Akrivia Automation Pvt Ltd</h3>
+            <p class="detail-role">MEAN Stack Developer</p>
+            <p>
+              Developed full-stack web applications, responsive Angular
+              interfaces, and secure Node.js REST APIs. Integrated
+              authentication and authorization, maintained data integrity, and
+              deployed applications on AWS and Heroku.
+            </p>
+            <p class="stack-line">
+              Angular · Node.js · TypeScript · MongoDB · WebSockets · AWS ·
+              RabbitMQ · SQL
+            </p>
+          </article>
+          <article id="fintech">
+            <p class="eyebrow">MAY 2022 — JUN 2026 / BENGALURU</p>
+            <h3>911 Fintech Solutions</h3>
+            <p class="detail-role">Senior Full Stack Developer</p>
+            <p>
+              Built merchant onboarding, billing, and chargeback workflows.
+              Connected Angular interfaces with Node.js REST APIs, optimized
+              MySQL queries, and integrated Redis caching.
+            </p>
+            <p>
+              Implemented unit and integration tests, supported Jenkins CI/CD,
+              and deployed applications on AWS EC2.
+            </p>
+            <p class="stack-line">
+              Node.js · Angular · Python · MySQL · AWS · Jenkins · Redis · CI/CD
+              · NgRx
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="projects" class="chapter" aria-labelledby="projects-title">
+        <div class="chapter-copy">
+          <p class="eyebrow">02 / SELECTED PROJECTS</p>
+          <h2 id="projects-title">
+            Small ideas.<br /><em>Whole universes.</em>
+          </h2>
+          <p class="intro">
+            Two full-stack applications. Connected interfaces, services, and
+            data.
+          </p>
+        </div>
+        <button
+          class="artwork-toggle"
+          id="artwork-toggle"
+          type="button"
+          aria-pressed="false"
+          hidden
+        >
+          Pause artwork
+        </button>
+        <div class="reading-details project-grid">
+          <article id="chat-system" class="project-card">
+            <div class="project-scene chat-scene">
+              <svg
+                viewBox="0 0 480 160"
+                fill="none"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <g stroke="currentColor" stroke-width="1.5">
+                  <path
+                    class="scene-wire"
+                    d="M60 103v23q0 10 10 10h125q15 0 15-15V88q0-12 12-12h50q12 0 12 12v33q0 15 15 15h111q10 0 10-10v-23"
+                  />
+                  <path
+                    d="m40 105 20-66 20 66M47 85h26M52 66h16m332 39 20-66 20 66m-33-20h26m-21-19h16"
+                  />
+                  <circle cx="60" cy="37" r="4" />
+                  <circle cx="420" cy="37" r="4" />
+                  <path
+                    class="signal"
+                    d="M44 28a20 20 0 0 1 32 0m-41-8a32 32 0 0 1 50 0m319 8a20 20 0 0 1 32 0m-41-8a32 32 0 0 1 50 0"
+                  />
+                  <rect x="206" y="18" width="68" height="40" rx="11" />
+                  <path d="m214 58-5 9 18-9m-7-26h40m-40 10h25" />
+                </g>
+                <circle class="packet packet-chat" r="4" fill="currentColor" />
+                <circle
+                  class="packet packet-chat delayed"
+                  r="3"
+                  fill="currentColor"
+                /></svg
+              ><span>CONVERSATIONS, CONNECTED</span>
+            </div>
+            <div class="project-body">
+              <p class="eyebrow">01 / FULL-STACK APPLICATION</p>
+              <h3>Chat System</h3>
+              <p>
+                Private conversations, group messaging, and live presence — one
+                connected application from Angular interface to real-time
+                services.
+              </p>
+              <p class="stack-line">
+                Angular · TypeScript · RxJS · Node.js · Express · Socket.IO ·
+                MySQL · MongoDB · Redis · AWS
+              </p>
+              <p>
+                JWT authentication, shared frontend components, primary and
+                analytics services, cached messages, and event-driven
+                notifications.
+              </p>
+              <div class="project-links">
+                <a
+                  class="project-live"
+                  href="https://maheshpcse.github.io/chat-app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Open live app ↗</a
+                >
+                <a
+                  href="https://github.com/maheshpcse/chat-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Frontend repository for Chat System"
+                  >Frontend code ↗</a
+                ><a
+                  href="https://github.com/maheshpcse/chat-system"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Backend repository for Chat System"
+                  >Backend code ↗</a
+                >
+              </div>
+            </div>
+          </article>
+          <article id="banking-system" class="project-card">
+            <div class="project-scene bank-scene">
+              <svg
+                viewBox="0 0 480 160"
+                fill="none"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <g stroke="currentColor" stroke-width="1.5">
+                  <path
+                    d="m38 48 44-25 44 25Zm5 59h78m-84 9h90M50 59v38m21-38v38m21-38v38m21-38v38"
+                  />
+                  <path
+                    class="scene-wire"
+                    d="M127 80h57q12 0 12 12v32q0 12 12 12h89q12 0 12-12V92q0-12 12-12h35"
+                  />
+                  <rect x="206" y="27" width="89" height="55" rx="9" />
+                  <path d="M206 44h89m-76 23h23m12 0h9" />
+                  <path
+                    d="M359 25h79v102l-8-5-8 5-8-5-8 5-8-5-8 5-8-5-8 5-7-5-7 5Zm14 22h50m-50 13h34m-34 16h50m-50 13h25"
+                  />
+                  <path class="signal" d="m402 105 6 6 12-12" />
+                </g>
+                <circle class="packet packet-bank" r="4" fill="currentColor" />
+                <circle
+                  class="packet packet-bank delayed"
+                  r="3"
+                  fill="currentColor"
+                /></svg
+              ><span>EVERY TRANSACTION, CONNECTED</span>
+            </div>
+            <div class="project-body">
+              <p class="eyebrow">02 / FULL-STACK APPLICATION</p>
+              <h3>Banking System</h3>
+              <p>
+                Account activity, transfers, and billing workflows — a unified
+                banking application with an Angular interface and authenticated
+                backend services.
+              </p>
+              <p class="stack-line">
+                Angular · TypeScript · RxJS · Angular Material · Node.js ·
+                Express · MongoDB · JWT
+              </p>
+              <p>
+                Reactive forms, guarded routes, deposits, withdrawals, peer
+                transfers, transaction history, and role-controlled billing.
+              </p>
+              <div class="project-links">
+                <a
+                  class="project-live"
+                  href="https://maheshpcse.github.io/banking-system/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Open live app ↗</a
+                >
+                <a
+                  href="https://github.com/maheshpcse/banking-system"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Frontend repository for Banking System"
+                  >Frontend code ↗</a
+                ><a
+                  href="https://github.com/maheshpcse/banking-system-server"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Backend repository for Banking System"
+                  >Backend code ↗</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="systems" class="chapter" aria-labelledby="systems-title">
+        <div class="chapter-copy">
+          <p class="eyebrow">03 / BENEATH THE SURFACE</p>
+          <h2 id="systems-title">Nothing works<br /><em>in isolation.</em></h2>
+          <p class="intro">
+            An interface meets an API. A request finds its data. A response
+            brings it all back together.
+          </p>
+        </div>
+        <div class="reading-details">
+          <article id="architecture">
+            <p class="eyebrow">
+              PRODUCTION EXPERIENCE / CONCEPTUAL CONNECTIONS
+            </p>
+            <h3>From interface to infrastructure.</h3>
+            <p>
+              Angular interfaces connect to Node.js REST APIs. Redis caching and
+              MySQL support responsive data access; AWS EC2 and Jenkins support
+              delivery. These technologies were used in my 911 Fintech role,
+              with a focus on application reliability and delivery.
+            </p>
+            <p>
+              RabbitMQ appears in the Akrivia role’s technology stack.
+              Microservices and event-driven architecture are listed in my
+              resume and explored in the personal Chat System project.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section
+        id="technology"
+        class="chapter"
+        aria-labelledby="technology-title"
+      >
+        <div class="chapter-copy">
+          <p class="eyebrow">04 / THE CONSTELLATION</p>
+          <h2 id="technology-title">
+            Different languages.<br /><em>Shared possibilities.</em>
+          </h2>
+          <p class="intro">
+            A connected toolkit, shaped by the work.<br />Explore how the pieces
+            relate.
+          </p>
+        </div>
+        <div class="reading-details">
+          <article id="core">
+            <div class="tech-emblem">
+              <svg
+                class=""
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18" />
+              </svg>
+            </div>
+            <p class="eyebrow">CORE / PROFESSIONAL EXPERIENCE</p>
+            <h3>JavaScript & TypeScript</h3>
+            <p>
+              Languages connecting frontend and backend work across both
+              professional roles. Python is also listed in the 911 Fintech
+              technology stack.
+            </p>
+            <ul class="tech-items" aria-label="Related technologies">
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18" /></svg
+                ><span>JavaScript</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18" /></svg
+                ><span>TypeScript</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18" /></svg
+                ><span>Python</span>
+              </li>
+            </ul>
+          </article>
+          <article id="design">
+            <div class="tech-emblem">
+              <svg
+                class=""
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z" />
+                <path d="m19 2 1 2 2 1" />
+              </svg>
+            </div>
+            <p class="eyebrow">CREATIVE PRACTICE</p>
+            <h3>Vibe Coder &amp; Stylish UI/UX Designer</h3>
+            <p>
+              AI-assisted building with a focus on simple interfaces, consistent
+              components, clear visual hierarchy, and responsive interaction
+              feedback.
+            </p>
+            <ul class="tech-items" aria-label="Related technologies">
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z" />
+                  <path d="m19 2 1 2 2 1" /></svg
+                ><span>UI/UX</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z" />
+                  <path d="m19 2 1 2 2 1" /></svg
+                ><span>Responsive design</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z" />
+                  <path d="m19 2 1 2 2 1" /></svg
+                ><span>AI-assisted building</span>
+              </li>
+            </ul>
+          </article>
+          <article id="frontend">
+            <div class="tech-emblem">
+              <svg
+                class=""
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <rect x="2" y="3" width="20" height="18" rx="4" />
+                <path d="M2 9h20M8 9v12M5 6h1m3 0h1" />
+              </svg>
+            </div>
+            <p class="eyebrow">PRODUCTION EXPERIENCE</p>
+            <h3>Interfaces & interaction</h3>
+            <p>
+              Angular, Angular Material, RxJS, and NgRx. Responsive interfaces
+              for full-stack applications and financial workflows.
+            </p>
+            <ul class="tech-items" aria-label="Related technologies">
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect x="2" y="3" width="20" height="18" rx="4" />
+                  <path d="M2 9h20M8 9v12M5 6h1m3 0h1" /></svg
+                ><span>Angular</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect x="2" y="3" width="20" height="18" rx="4" />
+                  <path d="M2 9h20M8 9v12M5 6h1m3 0h1" /></svg
+                ><span>Angular Material</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect x="2" y="3" width="20" height="18" rx="4" />
+                  <path d="M2 9h20M8 9v12M5 6h1m3 0h1" /></svg
+                ><span>RxJS</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect x="2" y="3" width="20" height="18" rx="4" />
+                  <path d="M2 9h20M8 9v12M5 6h1m3 0h1" /></svg
+                ><span>NgRx</span>
+              </li>
+            </ul>
+          </article>
+          <article id="backend">
+            <div class="tech-emblem">
+              <svg
+                class=""
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <rect x="3" y="3" width="18" height="7" rx="2" />
+                <rect x="3" y="14" width="18" height="7" rx="2" />
+                <path d="M7 6h1m-1 11h1m4-7v4m4-8h2m-2 11h2" />
+              </svg>
+            </div>
+            <p class="eyebrow">PRODUCTION EXPERIENCE</p>
+            <h3>APIs & services</h3>
+            <p>
+              Node.js, Express, and REST APIs. Authentication, authorization,
+              and backend reliability across professional roles. Hapi and
+              GraphQL are additional resume-listed skills.
+            </p>
+            <ul class="tech-items" aria-label="Related technologies">
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect x="3" y="3" width="18" height="7" rx="2" />
+                  <rect x="3" y="14" width="18" height="7" rx="2" />
+                  <path d="M7 6h1m-1 11h1m4-7v4m4-8h2m-2 11h2" /></svg
+                ><span>Node.js</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect x="3" y="3" width="18" height="7" rx="2" />
+                  <rect x="3" y="14" width="18" height="7" rx="2" />
+                  <path d="M7 6h1m-1 11h1m4-7v4m4-8h2m-2 11h2" /></svg
+                ><span>Express</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect x="3" y="3" width="18" height="7" rx="2" />
+                  <rect x="3" y="14" width="18" height="7" rx="2" />
+                  <path d="M7 6h1m-1 11h1m4-7v4m4-8h2m-2 11h2" /></svg
+                ><span>REST</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect x="3" y="3" width="18" height="7" rx="2" />
+                  <rect x="3" y="14" width="18" height="7" rx="2" />
+                  <path d="M7 6h1m-1 11h1m4-7v4m4-8h2m-2 11h2" /></svg
+                ><span>Hapi</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect x="3" y="3" width="18" height="7" rx="2" />
+                  <rect x="3" y="14" width="18" height="7" rx="2" />
+                  <path d="M7 6h1m-1 11h1m4-7v4m4-8h2m-2 11h2" /></svg
+                ><span>GraphQL</span>
+              </li>
+            </ul>
+          </article>
+          <article id="data">
+            <div class="tech-emblem">
+              <svg
+                class=""
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <ellipse cx="12" cy="5" rx="8" ry="3" />
+                <path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0" />
+              </svg>
+            </div>
+            <p class="eyebrow">PRODUCTION EXPERIENCE</p>
+            <h3>Data & responsiveness</h3>
+            <p>
+              MySQL and Redis in fintech workflows; MongoDB in MEAN stack
+              applications. PostgreSQL and MSSQL are additional skills listed in
+              the resume.
+            </p>
+            <ul class="tech-items" aria-label="Related technologies">
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <ellipse cx="12" cy="5" rx="8" ry="3" />
+                  <path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0" /></svg
+                ><span>MySQL</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <ellipse cx="12" cy="5" rx="8" ry="3" />
+                  <path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0" /></svg
+                ><span>Redis</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <ellipse cx="12" cy="5" rx="8" ry="3" />
+                  <path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0" /></svg
+                ><span>MongoDB</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <ellipse cx="12" cy="5" rx="8" ry="3" />
+                  <path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0" /></svg
+                ><span>PostgreSQL</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <ellipse cx="12" cy="5" rx="8" ry="3" />
+                  <path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0" /></svg
+                ><span>MSSQL</span>
+              </li>
+            </ul>
+          </article>
+          <article id="cloud">
+            <div class="tech-emblem">
+              <svg
+                class=""
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M6 16a5 5 0 0 1 0-10 6 6 0 0 1 11 1 4.5 4.5 0 0 1 1 9M8 20l4-4 4 4m-4-4v7"
+                />
+              </svg>
+            </div>
+            <p class="eyebrow">PRODUCTION & RESUME-LISTED SKILLS</p>
+            <h3>Cloud, events & delivery</h3>
+            <p>
+              AWS EC2, Jenkins, and CI/CD are supported by deployment
+              responsibilities at 911 Fintech. RabbitMQ is listed in the Akrivia
+              stack. GCP, Kafka, Docker, AWS S3, Lambda, and CloudWatch are also
+              listed in the resume; no proficiency level is assigned beyond that
+              evidence.
+            </p>
+            <ul class="tech-items" aria-label="Related technologies">
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M6 16a5 5 0 0 1 0-10 6 6 0 0 1 11 1 4.5 4.5 0 0 1 1 9M8 20l4-4 4 4m-4-4v7"
+                  /></svg
+                ><span>AWS</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M6 16a5 5 0 0 1 0-10 6 6 0 0 1 11 1 4.5 4.5 0 0 1 1 9M8 20l4-4 4 4m-4-4v7"
+                  /></svg
+                ><span>Jenkins</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M6 16a5 5 0 0 1 0-10 6 6 0 0 1 11 1 4.5 4.5 0 0 1 1 9M8 20l4-4 4 4m-4-4v7"
+                  /></svg
+                ><span>CI/CD</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M6 16a5 5 0 0 1 0-10 6 6 0 0 1 11 1 4.5 4.5 0 0 1 1 9M8 20l4-4 4 4m-4-4v7"
+                  /></svg
+                ><span>RabbitMQ</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M6 16a5 5 0 0 1 0-10 6 6 0 0 1 11 1 4.5 4.5 0 0 1 1 9M8 20l4-4 4 4m-4-4v7"
+                  /></svg
+                ><span>GCP</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M6 16a5 5 0 0 1 0-10 6 6 0 0 1 11 1 4.5 4.5 0 0 1 1 9M8 20l4-4 4 4m-4-4v7"
+                  /></svg
+                ><span>Kafka</span>
+              </li>
+              <li>
+                <svg
+                  class=""
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M6 16a5 5 0 0 1 0-10 6 6 0 0 1 11 1 4.5 4.5 0 0 1 1 9M8 20l4-4 4 4m-4-4v7"
+                  /></svg
+                ><span>Docker</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section id="github" class="chapter" aria-labelledby="github-title">
+        <div class="chapter-copy">
+          <p class="eyebrow">05 / AN OPEN WORKSHOP</p>
+          <h2 id="github-title">
+            The thinking<br /><em>behind the making.</em>
+          </h2>
+          <p class="intro">
+            Follow the connections into the code.<br />My personal projects live
+            on GitHub.
+          </p>
+
+          <a
+            class="journey-link"
+            href="https://github.com/maheshpcse"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Visit @maheshpcse <span>↗</span></a
+          >
+        </div>
+        <div class="reading-details">
+          <p>
+            Selected repositories are linked in the Projects section. Repository
+            descriptions and architecture notes come from the public GitHub
+            profile; professional experience comes from the supplied resume.
+          </p>
+        </div>
+      </section>
+      <section id="contact" class="chapter" aria-labelledby="contact-title">
+        <div class="chapter-copy">
+          <p class="eyebrow">06 / THE NEXT CONNECTION</p>
+          <h2 id="contact-title">
+            What could we<br /><em>build together?</em>
+          </h2>
+          <p class="intro">
+            An interesting challenge. A new opportunity.<br />It all starts with
+            a conversation.
+          </p>
+          <a class="journey-link" href="mailto:maheshmahi1599@gmail.com"
+            >Let’s talk <span>↗</span></a
+          >
+          <div class="contact-links">
+            <a href="mailto:maheshmahi1599@gmail.com"
+              >maheshmahi1599@gmail.com</a
+            ><a
+              href="https://www.linkedin.com/in/p-mahesh-89266a183"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn ↗</a
+            ><a href="./assets/Mahesh-Resume.pdf" download>Download resume ↓</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="reading-footer">
+      Pachapalam Mahesh
+      <span>Full Stack Engineer · 6+ years of experience</span>
+    </footer>
+  </body>
+</html>
