@@ -1076,3 +1076,23 @@ html.cinema-playing {
 #back-to-top span { color: var(--accent); font-size: 20px; }
 #back-to-top:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 @media print { #back-to-top { display: none; } }
+
+/* Edition links appear in the reading header after the existing intro. */
+.site-header nav { flex-wrap: wrap; justify-content: center; }
+.portfolio-versions {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-top: 1px solid var(--line);
+  padding-top: 5px;
+}
+.portfolio-versions > span { font-size: 9px; color: var(--muted); margin-right: 4px; }
+.site-header .portfolio-versions a { color: var(--accent); padding: 5px 8px; white-space: nowrap; }
+.site-header .portfolio-versions a[aria-current] { color: var(--text); background: var(--surface); }
+@media (max-width: 760px) {
+  .portfolio-versions { margin-top: 6px; padding-top: 8px; }
+  .site-header .portfolio-versions a { padding: 5px 7px; }
+  .portfolio-versions > span { font-size: 8px; }
+}

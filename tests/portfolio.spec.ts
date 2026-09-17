@@ -140,3 +140,24 @@ test("classic back to top appears after scrolling and returns focus to the intro
     await expect(page.locator("#back-to-top")).toBeHidden();
   }
 });
+
+test("classic links open both animated editions without changing the intro", async ({ page }) => {
+  const { readFileSync } = await import("node:fs");
+  const { createHash } = await import("node:crypto");
+  const source = readFileSync("index.html", "utf8").replace(/\r\n/g, "\n");
+  const intro = source.match(/    <dialog[\s\S]*?<\/dialog>/)![0];
+  expect(createHash("sha256").update(intro).digest("hex")).toBe(readFileSync("docs/intro-preserved.sha256", "utf8").trim());
+  await page.setViewportSize({width:375,height:812});
+  await page.goto("/");
+  await expect(page.locator("#cinema-intro")).toBeVisible();
+  await page.getByRole("button", {name:"Skip intro"}).click();
+  const versions = page.getByRole("group", {name:"Portfolio versions"});
+  await expect(versions.getByRole("link", {name:"In Motion"})).toBeInViewport();
+  await expect(versions.getByRole("link", {name:"Scenes"})).toBeInViewport();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await versions.getByRole("link", {name:"In Motion"}).click();
+  await expect(page).toHaveURL(/motion.html$/);
+  await page.goto("/portfolio.html");
+  await page.getByRole("group", {name:"Portfolio versions"}).getByRole("link", {name:"Scenes"}).click();
+  await expect(page).toHaveURL(/scenes.html$/);
+});

@@ -4,7 +4,7 @@ import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 test("classic files remain unchanged", () => {
   const baseline = JSON.parse(
-    readFileSync("docs/production-preserved.json", "utf8"),
+    readFileSync("docs/navigation-preserved.json", "utf8"),
   );
   for (const [name, hash] of Object.entries(baseline))
     expect(
